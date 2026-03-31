@@ -1,0 +1,989 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'KerisKedyuche';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-3@1.0/KERISKEDU_R.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KerisKedyuche2';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-3@1.0/KERISKEDU_B.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Escoredream';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Escoredream';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Escoredream';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Escoredream';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Escoredream';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Escoredream';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Escoredream';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Escoredream';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Escoredream';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nanummyeonjo';
+    src: url('../font/NanumMyeongjoBold.otf');
+}
+
+@font-face {
+    font-family: 'Yangjin';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(252, 247, 183, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+}
+
+header.on {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.tabbtn {
+    display: flex;
+    justify-content: right;
+    padding-right: 2rem;
+}
+
+.tabbtn li {
+    width: 120px;
+    padding: 1rem 0;
+
+}
+
+.tabbtn li a {
+    display: block;
+    padding: 1rem 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(83, 83, 83);
+}
+
+.tabbtn li a:hover {
+    color: #191919;
+}
+
+.tabbtn li.on a {
+    color: #c09d00;
+}
+
+body {
+    background-color: #fefdd9;
+}
+
+section {
+    padding-top: 7rem;
+}
+
+.title video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.title {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    font-family: 'KerisKedyuche2';
+    font-weight: 700;
+    line-height: 100px;
+    padding: 0;
+    top: 0;
+}
+
+.box1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    top: -50%;
+    animation: movemove 2s forwards;
+}
+
+@keyframes movemove {
+    0% {
+        top: -70%;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.box1 h1 {
+    color: #fff;
+    mix-blend-mode: difference;
+    font-weight: 400;
+}
+
+.title strong {
+    color: #477400;
+}
+
+.box1 p {
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+    mix-blend-mode: difference;
+}
+
+.profile {
+    width: 100%;
+    font-family: 'Escoredream';
+    padding-bottom: 7rem;
+    position: relative;
+}
+
+.profile a {
+    font-family: 'Escoredream';
+    font-weight: 700;
+    font-size: 30px;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    display: block;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    width: fit-content;
+
+}
+
+.profile .box2 {
+    margin: 100px 0;
+    margin-left: 70px;
+    font-size: 2rem;
+}
+
+.profile .photobox {
+    width: 430px;
+    height: 550px;
+    background-color: #191919;
+    border-radius: 50px;
+    position: relative;
+}
+
+.profile .photobox img {
+    width: 430px;
+    height: 550px;
+    border-radius: 50px;
+    border: 2px solid #191919;
+}
+
+.profile .photobox::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #191919;
+    top: -10px;
+    left: 10px;
+    border-radius: 50px;
+    background-color: #191919;
+    z-index: -1;
+}
+
+.profile h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.profile .flex {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+.profile .about {
+    width: 50%;
+    font-size: 25px;
+}
+
+.about h2 {
+    margin: 2rem 0;
+}
+
+.about h2:nth-child(1) {
+    margin-top: 0;
+}
+
+.profile .about h3 {
+    text-align: left;
+    color: #222;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.icons {
+    margin-top: 25px;
+}
+
+.icons img {
+    width: 8%;
+    display: inline-block;
+}
+
+.bar1 {
+    width: 100%;
+    height: 10px;
+    margin-top: 200px;
+    background-color: #000;
+}
+
+.contest {
+    position: relative;
+    width: 100%;
+    font-family: 'Escoredream';
+    padding: 0;
+}
+
+.contest h2 {
+    position: absolute;
+    font-size: 3rem;
+    top: 100px;
+    left: 100px;
+    color: #fff;
+    z-index: 99;
+}
+
+.contest p {
+    position: absolute;
+    font-size: 20px;
+    top: 200px;
+    left: 100px;
+    width: 300px;
+    color: #fff;
+    z-index: 99;
+}
+
+.contest .video-wrap {
+    position: relative;
+}
+
+.contest .video-wrap::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contest video {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    object-fit: cover;
+    display: block;
+    opacity: 0.6;
+}
+
+.contest iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 600px;
+}
+
+.youtube {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: inline-block;
+    /* background-color: rgb(19, 19, 19); */
+    padding: 15rem 0;
+    font-family: 'Escoredream';
+}
+
+.youtube h2 {
+    position: absolute;
+    font-size: 3rem;
+    top: 180px;
+    left: 100px;
+    color: #191919;
+}
+
+.mySwiper {
+    margin-top: 3rem;
+    width: 90%;
+    height: 70vh;
+}
+
+.mySwiper .swiper-slide {
+    background-color: gray;
+    font-size: 2rem;
+    /* margin: 0 auto; */
+    color: #fff;
+    text-align: center;
+}
+
+.mySwiper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.makingfilm {
+    width: 100%;
+    height: auto;
+    padding: 100px 20px;
+    /* background-color: rgb(255, 53, 87); */
+    position: relative;
+    font-family: 'Escoredream';
+    display: flex;
+    justify-content: center;
+}
+
+.makingfilm h2 {
+    font-size: 4rem;
+    padding: 3rem;
+    color: #191919;
+    writing-mode: vertical-lr;
+    padding-top: 0;
+}
+
+.makingfilm video {
+    width: 70%;
+}
+
+.typhograpy {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(#191919 40%, #fff 40%);
+    position: relative;
+    font-family: 'Escoredream';
+    padding: 10rem 0;
+}
+
+.typhograpy h2 {
+    position: absolute;
+    font-size: 3rem;
+    top: 180px;
+    left: 100px;
+    color: #fff;
+    z-index: 200;
+}
+
+.typhograpy .box1 {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 40vh;
+    top: 170px;
+}
+
+.typhograpy .box3 {
+    display: flex;
+    justify-content: flex-end;
+    height: 70vh;
+    padding: 2rem 5rem;
+    margin-left: auto;
+    position: relative;
+    z-index: 99;
+    top: 100px;
+}
+
+.typhograpy .box3 video {
+    height: 500px;
+    object-fit: contain;
+}
+
+
+
+.MiniProject {
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: rgb(255, 255, 255); */
+    position: relative;
+    overflow: hidden;
+    font-family: 'Escoredream';
+}
+
+.MiniProject h2 {
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    top: 400px;
+    color: #191919;
+}
+
+.art {
+    position: absolute;
+    width: 400px;
+}
+
+.art img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.art1 {
+    top: 35%;
+    left: 15%;
+    animation: scroll 0.7s infinite alternate;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.art2 {
+    top: 15%;
+    left: 35%;
+    animation: scroll 0.7s 0.4s infinite alternate;
+
+}
+
+
+.art3 {
+    top: 25%;
+    left: 60%;
+    width: 250px;
+    animation: scroll 0.7s 0.5s infinite alternate;
+
+}
+
+.art4 {
+    top: 35%;
+    left: 75%;
+    width: 250px;
+    animation: scroll 0.7s 0.6s infinite alternate;
+
+}
+
+.art5 {
+    top: 55%;
+    left: 30%;
+    width: 250px;
+    animation: scroll 0.7s 0.3s infinite alternate;
+
+}
+
+.art6 {
+    top: 55%;
+    left: 50%;
+    width: 250px;
+    animation: scroll 0.7s 0.7s infinite alternate;
+}
+
+.D3works {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Escoredream';
+    padding: 0;
+    display: flex;
+    background-color: #191919;
+}
+
+.bar3 {
+    width: 100%;
+    height: 10px;
+    margin-top: 200px;
+    /* background-color: #000; */
+}
+
+.title2 {
+    height: 100%;
+    font-size: 3rem;
+    color: #fff;
+    padding: 100px;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.gallery {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.gallery li {
+    flex: 1;
+    border: 1px solid #333;
+    position: relative;
+    transition: all .5s;
+}
+
+.gallery li:nth-child(1) {
+    background: url('../images/danbi1.jpg') no-repeat center/cover;
+}
+
+.gallery li:nth-child(2) {
+    background: url('../images/danbi2.jpg') no-repeat center/cover;
+}
+
+.gallery li:nth-child(3) {
+    background: url('../images/danbi3.jpeg') no-repeat center/cover;
+}
+
+.gallery li:nth-child(4) {
+    background: url('../images/danbi4.jpg') no-repeat center/cover;
+}
+
+.gallery li:nth-child(5) {
+    background: url('../images/danbi5.jpg') no-repeat center/cover;
+}
+
+.gallery li .content {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    /* background-color: #000; */
+    color: #fff;
+    bottom: -300px;
+    line-height: 1.7;
+    padding-top: 50px;
+    text-align: center;
+    transition: all .5s;
+}
+
+.gallery li:hover {
+    flex: 3;
+}
+
+.gallery li:hover .content {
+    bottom: 0;
+}
+
+.contact {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    /* background-color: rgb(255, 255, 255); */
+    position: relative;
+    overflow: hidden;
+    font-family: 'Escoredream';
+}
+
+.contactbox {
+    width: 500px;
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 70px;
+    text-align: center;
+}
+
+.gotop {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 40px;
+    height: 40px;
+    background: #333;
+    display: none;
+    z-index: 999;
+}
+
+.gotop span {
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(45deg);
+    z-index: 99;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(147, 155, 117);
+    color: #fff;
+}
+
+
+
+
+
+
+
+@media (max-width: 1580px) {
+    .profile .about {
+        margin-top: 0;
+    }
+
+    .about h2 {
+        margin: 2rem 0;
+    }
+
+    .profile .about h3 {
+        font-size: 1.5rem;
+    }
+
+}
+@media (max-width: 1440px) {
+    .contest h2 {
+        left: 60px;
+    }
+    .contest p {
+        left: 60px
+    }
+    .MiniProject .art1{
+        left: 150px;
+        top: 160px;
+    }
+    .MiniProject .art2{
+        top: 50px;
+    }
+    .MiniProject .art3{
+        top: 80px;
+    }
+    .MiniProject .art5{
+        left: 300px;
+        top: 380px;
+    }
+    .MiniProject .art6{
+        left: 700px;
+        top: 500px;
+    }
+}
+
+
+@media (max-width: 1256px) {
+    html {
+        font-size: 14px;
+    }
+
+    .profile .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile .about {
+        text-align: center;
+    }
+
+    .profile .about h3 {
+        text-align: center;
+    }
+
+    .profile a {
+        margin: 2rem auto;
+    }
+
+    .contest iframe {
+        width: 70%;
+        top: 60%;
+    }
+
+    .contest p {
+        top: 110px;
+        left: 300px;
+    }
+    .mySwiper {
+        height: 60vh;
+    }
+}
+@media (max-width: 1024px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+    header {
+        height: 60px;
+    }
+
+    .tabbtn {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .tabbtn li {
+        width: auto;
+        padding: 0.5rem;
+    }
+
+    .title {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .box1 {
+        font-size: 28px;
+    }
+
+    .box1 p {
+        font-size: 16px;
+    }
+
+    .profile .flex {
+        width: 90%;
+        flex-direction: column;
+        gap: 40px;
+
+    }
+
+    .profile .about {
+        width: 100%;
+        font-size: 25px;
+        margin-top: 0;
+    }
+
+    .about h2 {
+        margin: 1rem 0;
+        font-size: 2rem;
+    }
+
+    .profile h3 {
+        font-size: 27px;
+    }
+
+
+
+    .profile .photobox {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .icons {
+        width: 100%;
+    }
+
+    .profile .photobox img {
+        width: 100%;
+        height: auto;
+    }
+
+    .profile .box2 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .profile .about h3,
+    .profile .about .iam {
+        position: static;
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .contest h2 {
+        left: 30px;
+        top: 40px;
+    }
+    .contest iframe {
+        width: 70%;
+        top: 50%;
+        height: 450px;
+    }
+    .contest p {
+        left: 180px;
+        top: 50px;
+    }
+
+    .contest h2 {
+        font-size: 2rem;
+    }
+
+    .contest p {
+        font-size: 14px;
+        width: auto;
+    }
+
+    .youtube {
+        width: 100%;
+    }
+
+    .youtube h2 {
+        left: 20px;
+        font-size: 2rem;
+    }
+
+    .mySwiper {
+        width: 70%;
+        aspect-ratio: 9/16;
+    }
+
+    .swiper-mySwiper {
+        width: 100%;
+    }
+    .swiper-wrapper {
+        padding-top: 30px;
+        height: 350px;
+        width: 800px;
+    }
+
+    .swiper-mySwiper .swiper-slide {
+        width: 800px;
+    }
+
+    .makingfilm h2 {
+        position: static;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+    .typhograpy {
+        height: auto;
+        padding: 5rem 1rem;
+    }
+
+    .typhograpy h2 {
+        left: 20px;
+        font-size: 2rem;
+    }
+    .typhograpy video {
+        width: 100%;
+    }
+
+    .MiniProject {
+        height: auto;
+        top: 10rem;
+    }
+    .MiniProject h2 {
+        top: 2px;
+        font-size: 2rem;
+        padding-bottom: 30px;
+    }
+
+    .art {
+        position: static;
+        width: 40%;
+        margin: 20px auto;
+    }
+
+    .D3works {
+        flex-direction: column;
+    }
+
+    .title2 {
+        padding: 20px;
+        font-size: 2rem;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery li {
+        height: 200px;
+    }
+
+    .contactbox {
+        width: 90%;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+}
