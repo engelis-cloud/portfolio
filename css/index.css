@@ -1099,3 +1099,23 @@ footer {
     }
 
 }
+
+@media (max-width: 375px) {
+    .makingfilm h2{
+        font-size: 2rem;
+        margin: 0 auto;
+        padding: 0px 28px 28px;
+    }
+    .makingfilm video {
+        width: 260px;
+    }
+    .typhograpy h2 {
+        left: 30px;
+    }
+    .typhograpy .box3 {
+        padding: 0px;
+    }
+    .typhograpy .box3 video {
+        width: 350px;
+    }
+}
