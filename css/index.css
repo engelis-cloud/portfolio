@@ -517,6 +517,7 @@ section {
 .art1 {
     top: 35%;
     left: 15%;
+    width: 400px;
     animation: scroll 0.7s infinite alternate;
 }
 
@@ -533,6 +534,7 @@ section {
 .art2 {
     top: 15%;
     left: 35%;
+    width: 400px;
     animation: scroll 0.7s 0.4s infinite alternate;
 
 }
@@ -541,7 +543,7 @@ section {
 .art3 {
     top: 25%;
     left: 60%;
-    width: 250px;
+    width: 400px;
     animation: scroll 0.7s 0.5s infinite alternate;
 
 }
@@ -549,7 +551,7 @@ section {
 .art4 {
     top: 35%;
     left: 75%;
-    width: 250px;
+    width: 400px;
     animation: scroll 0.7s 0.6s infinite alternate;
 
 }
@@ -557,7 +559,7 @@ section {
 .art5 {
     top: 55%;
     left: 30%;
-    width: 250px;
+    width: 400px;
     animation: scroll 0.7s 0.3s infinite alternate;
 
 }
@@ -565,7 +567,8 @@ section {
 .art6 {
     top: 55%;
     left: 50%;
-    width: 250px;
+    width: 400px;
+    
     animation: scroll 0.7s 0.7s infinite alternate;
 }
 
@@ -710,7 +713,41 @@ footer {
 
 
 
-
+@media (max-width: 1920px) {
+    .MiniProject h2{
+        top: 400px;
+    }
+    .MiniProject .art1{
+        left: 230px;
+        top: 500px;
+        width: 500px;
+    }
+    .MiniProject .art2{
+        top: 50px;
+        width: 500px;
+        left: 700px;
+    }
+    .MiniProject .art3{
+        top: 110px;
+        width: 500px;
+        left: 1250px;
+    }
+    .MiniProject .art4{
+        top: 410px;
+        width: 350px;
+        left: 1280px;
+    }
+    .MiniProject .art5{
+        left: 310px;
+        top: 80px;
+        width: 350px;
+    }
+    .MiniProject .art6{
+        left: 760px;
+        top: 600px;
+        width: 500px;
+    }
+}
 
 @media (max-width: 1580px) {
     .profile .about {
@@ -733,23 +770,38 @@ footer {
     .contest p {
         left: 60px
     }
+    .MiniProject h2{
+        top: 320px;
+    }
     .MiniProject .art1{
         left: 150px;
         top: 160px;
+        width: 350px;
     }
     .MiniProject .art2{
         top: 50px;
+        width: 350px;
+        left: 530px;
     }
     .MiniProject .art3{
-        top: 80px;
+        top: 90px;
+        width: 350px;
+        left: 900px;
+    }
+    .MiniProject .art4{
+        top: 310px;
+        width: 250px;
+        left: 950px;
     }
     .MiniProject .art5{
         left: 300px;
         top: 380px;
+        width: 250px;
     }
     .MiniProject .art6{
-        left: 700px;
+        left: 580px;
         top: 500px;
+        width: 350px;
     }
 }
 
@@ -792,6 +844,61 @@ footer {
 @media (max-width: 1024px) {
     html {
         font-size: 13px;
+    }
+    .contest h2 {
+        top:80px
+    }
+    .contest p{
+        left: 230px;
+        top: 90px;
+    }
+    .contest iframe {
+        width: 60%;
+        height: 60%;
+    }
+    .youtube h2 {
+        top: 100px;
+        left: 58px;
+    }
+    .typhograpy h2 {
+        top: 100px;
+        left: 68px;
+    }
+    .typhograpy .box3 {
+        top: 40px;
+    }
+    .MiniProject h2 {
+        top: 320px;
+        left: 40px;
+    }
+    .MiniProject .art1 {
+        left: 80px;
+        top: 230px;
+        width: 300px;
+    }
+    .MiniProject .art2 {
+        left: 290px;
+        top: 80px;
+        width: 300px;
+    }
+    .MiniProject .art3 {
+        left: 580px;
+        top: 120px;
+        width: 300px;
+    }
+    .MiniProject .art4 {
+        width: 220px;
+        left: 720px;
+        top: 280px;
+    }
+    .MiniProject .art5 {
+        width: 220px;
+        left: 210px;
+    }
+    .MiniProject .art6 {
+        width: 300px;
+        left: 430px;
+        top: 430px;
     }
 }
 
@@ -878,17 +985,17 @@ footer {
     }
 
     .contest h2 {
-        left: 30px;
-        top: 40px;
+        left: 40px;
+        top: 42px;
     }
     .contest iframe {
         width: 70%;
-        top: 50%;
+        top: 55%;
         height: 450px;
     }
     .contest p {
-        left: 180px;
-        top: 50px;
+        left: 150px;
+        top: 48px;
     }
 
     .contest h2 {
@@ -905,7 +1012,7 @@ footer {
     }
 
     .youtube h2 {
-        left: 20px;
+        left: 40px;
         font-size: 2rem;
     }
 
@@ -940,8 +1047,12 @@ footer {
     }
 
     .typhograpy h2 {
-        left: 20px;
+        left: 68px;
         font-size: 2rem;
+        top: 100px;
+    }
+    .typhograpy .box3 {
+        top: 10px;
     }
     .typhograpy video {
         width: 100%;
@@ -955,6 +1066,7 @@ footer {
         top: 2px;
         font-size: 2rem;
         padding-bottom: 30px;
+        left: 0;
     }
 
     .art {
